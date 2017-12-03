@@ -1,3 +1,4 @@
 Simple Weather app displaying data from "openweathermap.org".
 
-User can choose from a list of cities in Finland to see the current weather, temperature, clouds, humidity and weather icon.
+1. User selects a city from a list of cities in Finland.
+2. The app shows the current weather, temperature, clouds, humidity and weather icon of the selected city.
