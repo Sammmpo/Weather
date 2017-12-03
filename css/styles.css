@@ -18,13 +18,18 @@ h1{
     -webkit-text-stroke-color: black;
 }
 
+.crop {
+    height: 50%;
+    overflow: hidden;
+}
+.crop img {
+    height: 100%;
+    margin: -20px -0px -20px -0%;
+}
+
 .selection{
     border-width: medium;
     border-color: grey;
-    background-color: -webkit-linear-gradient(left top, grey, lightblue);
-    background-color: -o-linear-gradient(bottom right, grey, lightblue);
-    background-color: -moz-linear-gradient(bottom right, grey, lightblue);
-    background-color: linear-gradient(to bottom right, grey, lightblue);
     font-family: verdana;
 }
 

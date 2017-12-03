@@ -18,17 +18,15 @@ function loadJSONDocWithParse() {
 
 function printJSONTable(jsonObj) {
 	var data = jsonObj;
-	var out = "<table>";
-		out += '<thead><th colspan=3>'+ data.name +'</th></thead>'
-		out += '<tr><td>Weather</td><td>'+ data.weather[0].description + '</td><tr>';
-		out += '<tr><td>Temperature</td><td>'+ data.main.temp + '</td><tr>';
-		out+="</table>";
-	document.getElementById("data").innerHTML = out;
+	document.getElementById("weather").innerHTML = data.weather[0].description;
+	document.getElementById("temperature").innerHTML = data.main.temp;
+	document.getElementById("clouds").innerHTML = data.clouds.all;
+	document.getElementById("humidity").innerHTML = data.main.humidity;
+	document.getElementById("icon").innerHTML = "<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>"
 }
-
 
 go(); //autorun on launch.
 function go() {
-	selectedCity = document.getElementById("area").value;
+	selectedCity = document.getElementById("area").value; //read input.
 	loadJSONDocWithParse();
 }
